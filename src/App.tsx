@@ -13,13 +13,10 @@ import MusicGenerator from './components/MusicGenerator';
 import Projects from './components/Projects';
 import Settings from './components/Settings';
 import Auth from './components/Auth';
-import { PanelLeft as SidebarIcon, CheckCircle2, AlertCircle } from 'lucide-react';
-import { ProjectProvider } from './context/ProjectContext';
-
-export type View = 'home' | 'image' | 'video' | 'music' | 'profile' | 'projects' | 'settings';
-export type Theme = 'dark' | 'light';
-
 import { 
+  PanelLeft as SidebarIcon,
+  CheckCircle2,
+  AlertCircle,
   Home as HomeIcon,
   Image as ImageIcon,
   Video as VideoIcon,
@@ -29,6 +26,10 @@ import {
   Bell,
   Sparkles
 } from 'lucide-react';
+import { ProjectProvider } from './context/ProjectContext';
+
+export type View = 'home' | 'image' | 'video' | 'music' | 'profile' | 'projects' | 'settings';
+export type Theme = 'dark' | 'light';
 
 import Home from './components/Home';
 import Profile from './components/Profile';

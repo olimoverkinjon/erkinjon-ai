@@ -20,12 +20,12 @@ interface SidebarProps {
 
 export default function Sidebar({ currentView, setView, onLogout, t }: SidebarProps) {
   const navItems = [
-    { id: 'home', icon: HomeIcon, label: t.home },
-    { id: 'image', icon: ImageIcon, label: t.image },
-    { id: 'video', icon: VideoIcon, label: t.video },
-    { id: 'music', icon: MusicIcon, label: t.music },
-    { id: 'projects', icon: FolderRoot, label: t.projects },
-    { id: 'settings', icon: Settings, label: t.settings },
+    { id: 'home', icon: HomeIcon, label: t.dashboard.home },
+    { id: 'image', icon: ImageIcon, label: t.dashboard.image },
+    { id: 'video', icon: VideoIcon, label: t.dashboard.video },
+    { id: 'music', icon: MusicIcon, label: t.dashboard.music },
+    { id: 'projects', icon: FolderRoot, label: t.dashboard.projects },
+    { id: 'settings', icon: Settings, label: t.dashboard.settings },
   ];
 
   return (
@@ -65,7 +65,7 @@ export default function Sidebar({ currentView, setView, onLogout, t }: SidebarPr
           className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-text-secondary hover:bg-red-500/10 hover:text-red-500 transition-all group"
         >
           <LogOut size={20} className="group-hover:text-red-500 transition-colors" />
-          {t.logout}
+          {t.dashboard.logout}
         </button>
       </div>
     </aside>

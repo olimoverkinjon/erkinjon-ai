@@ -21,8 +21,8 @@ interface ProfileProps {
 
 export default function Profile({ onLogout, setView, t }: ProfileProps) {
   const menuItems = [
-    { id: 'projects', icon: FolderRoot, label: t.dashboard.projects, desc: t.home.recentCreationsTitle },
-    { id: 'settings', icon: Settings, label: t.dashboard.settings, desc: t.imageGen.promptExpert },
+    { id: 'projects', icon: FolderRoot, label: t.dashboard.projects, desc: 'Manage your creations' },
+    { id: 'settings', icon: Settings, label: t.dashboard.settings, desc: 'Customize your experience' },
     { id: 'subscription', icon: CreditCard, label: 'Subscription', desc: 'Manage your pro plan' },
     { id: 'security', icon: Shield, label: 'Security', desc: 'Privacy and data management' },
   ];
